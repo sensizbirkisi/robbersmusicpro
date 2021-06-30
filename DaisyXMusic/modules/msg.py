@@ -94,7 +94,7 @@ kanal c yerine de kullanılabilir (/cplay = / channelplay )
 1) kanal kimliğinizi alın.
 2) tittle ile bir grup oluşturun: Kanal müzik: your_channel_id
 3) tam perma ile kanal yöneticisi olarak bot ekleyin
-4) kanala yönetici olarak @{ASSİSTANT_NAME} ekleyin.
+4) kanala yönetici olarak @{ASSISTANT_NAME} ekleyin.
 5) sadece grubunuza komutlar gönderin. (bunun yerine /ytplay /play kullanmayı unutmayın)
 """,
 
@@ -103,7 +103,7 @@ f"""
 
 - /musicplayer [on / off]: müzik çaları Etkinleştir / devre dışı bırak
 - /admincache: grubunuzun yönetici bilgilerini günceller. Bot yönetici tarafından tanınmıyorsa deneyin
-- /userbotjoin: @{ASSİSTANT_NAME} kullanıcısını sohbetinize davet edin
+- /userbotjoin: @{ASSISTANT_NAME} kullanıcısını sohbetinize davet edin
 """,
 f"""
 **=>> Şarkı İndir 🎸**
