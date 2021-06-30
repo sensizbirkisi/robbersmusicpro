@@ -38,7 +38,7 @@ f"""
 1) bot admin olun (cplay kullanıyorsanız grup ve kanalda)
 2) sesli sohbet başlatın
 3) bir yönetici tarafından ilk kez [şarkı adı] çalmayı /çalmayı deneyin
-* ) Userbot katıldıysa, müzik keyfini çıkarın, değilse grubunuza @{ASSİSTANT_NAME} ekleyin ve tekrar deneyin
+* ) Userbot katıldıysa, müzik keyfini çıkarın, değilse grubunuza @{ASSISTANT_NAME} ekleyin ve tekrar deneyin
 
 ** Kanal Müzik Çalma İçin**
 1) beni kanalınızın yöneticisi yapın 
