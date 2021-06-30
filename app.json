@@ -15,53 +15,53 @@
   ],        
   "env": {
     "SESSION_NAME": {
-      "description": "Pyrogram session string",
+      "description": "string sessionunuzu buraya girin ",
       "required": true
     },
     "BOT_TOKEN": {
-      "description": "A bot token from @BotFather",
+      "description": "bot olusturup tokenı buraya girin  @BotFather",
       "required": true
     },
     "BOT_USERNAME": {
-      "description": "Your bot's username without @",
+      "description": "botun kullanıcı adını gırın @ olmadan",
       "required": true
     },
     "BOT_NAME": {
-      "description": "Your MusicPlayer Bot Name.",
+      "description": "BOTUNUN ISMINI GIRIN.",
       "required": false,
       "value": ""
     },
     "SUPPORT_GROUP": {
-      "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
+      "description": "bURAYA SUPPORT GRUBUNUZU GİRİN]",
       "required": false,
       "value": "LoungeMusicsupport"
     },
     "PROJECT_NAME": {
-      "description": "Your MusicPlayer project Name.",
+      "description": "pROJE ISMINIZI GIRIN.",
       "required": false,
       "value": "LoungeMusic v1"
     },
     "ASSISTANT_NAME": {
-      "description": "Your MusicPlayer's assistant Username without @.",
+      "description": "Asistanınızın Kullanıcı adını gırın @ sız.",
       "required": true
     },
     "ARQ_API_KEY": {
-      "description": "Get from @ARQRobot.",
+      "description": "burdan alın @ARQRobot.",
       "required": false,
       "value": ""
     },    
     "BG_IMAGE": {
       "description": "BG image of bot (Use transparent one) [IGNORE].",
       "required": false,
-      "value": " https://telegra.ph/file/dcfdf612e499eef0e0b1f.png"
+      "value": " https://telegra.ph/file/03f1c9ec4513c3a52bc22.jpg"
     },     
     "UPDATES_CHANNEL": {
-      "description": "Updates Channel without @ [Leave this if you don't have one].",
+      "description": "Güncelleme kanalını secin].",
       "required": false,
       "value": "Loungeupdates"
     },    
     "API_ID": {
-      "description": "App ID from my.telegram.org/apps",
+      "description": "Api ıd nızı burdan alın my.telegram.org/apps",
       "required": true
     },
     "PMPERMIT": {
@@ -70,11 +70,11 @@
       "value": "ENABLE"
     },    
     "API_HASH": {
-      "description": "App hash from my.telegram.org/apps",
+      "description": "App hash burdan alın my.telegram.org/apps",
       "required": true
     },
     "SUDO_USERS": {
-      "description": "List of user IDs counted as admin everywhere (separated by space).",
+      "description": "Burdan yetkili secin (separated by space).",
       "required": true
     },
     "DURATION_LIMIT": {
