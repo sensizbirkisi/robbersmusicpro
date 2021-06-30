@@ -1,8 +1,8 @@
 <h1 align="centre">LoungeMUSIC V1.0 🎵</h1>
 
-### A bot that can play music on Telegram Group and Channel Voice Chats
-#### POWERED BY [MARSHALX TGCALLS](https://github.com/MarshalX/tgcalls)
-### Available on telegram as [@Loungemusicsupport](https://t.me/loungemusicsupport)
+### Telegram gruplarınızda müzik dinlemenize yarar 
+#### POWERED BY [Bodrumlu](https://t.me/bodrumlubebekk)
+### Destek kanalı [@Loungemusicsupport](https://t.me/loungemusicsupport)
 
 <p align="center">
   <img src="https://telegra.ph/file/03f1c9ec4513c3a52bc22.jpg">
