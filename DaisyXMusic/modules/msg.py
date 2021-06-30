@@ -21,111 +21,111 @@ from DaisyXMusic.config import PROJECT_NAME
 from DaisyXMusic.config import SUPPORT_GROUP
 from DaisyXMusic.config import UPDATES_CHANNEL
 class Messages():
-      START_MSG = "**Hello 👋 [{}](tg://user?id={})!**\n\n🤖 I am an advanced bot created for playing music in the voice chats of Telegram Groups & Channels.\n\n✅ Send me /help for more info."
+      START_MSG = "**Merhaba 👋 [{}](tg://user?id={})!**\n\n🤖 Ben telegram gruplarına Sesli sohbetlerde Müzik calmak icin yapıldım & Hoşgeldin\n\n✅ Bana  /help yazarak bilgi alabirsin."
       HELP_MSG = [
         ".",
 f"""
-**Hey 👋 Welcome back to {PROJECT_NAME}
+**Hey ♪ tekrar Hoş Geldiniz {PROJECT_NAME}
 
-⚪️ {PROJECT_NAME} can play music in your group's voice chat as well as channel voice chats
+⚪️ {PROJECT_NAME} grubunuzun sesli sohbetinde ve kanal sesli sohbetlerinde müzik çalabilir
 
 ⚪️ Assistant name >> @{ASSISTANT_NAME}\n\nClick next for instructions**
 """,
 
 f"""
-**Setting up**
+**Ayarlama**
 
-1) Make bot admin (Group and in channel if use cplay)
-2) Start a voice chat
-3) Try /play [song name] for the first time by an admin
-*) If userbot joined enjoy music, If not add @{ASSISTANT_NAME} to your group and retry
+1) bot admin olun (cplay kullanıyorsanız grup ve kanalda)
+2) sesli sohbet başlatın
+3) bir yönetici tarafından ilk kez [şarkı adı] çalmayı /çalmayı deneyin
+* ) Userbot katıldıysa, müzik keyfini çıkarın, değilse grubunuza @{ASSİSTANT_NAME} ekleyin ve tekrar deneyin
 
-**For Channel Music Play**
-1) Make me admin of your channel 
-2) Send /userbotjoinchannel in linked group
-3) Now send commands in linked group
+** Kanal Müzik Çalma İçin**
+1) beni kanalınızın yöneticisi yapın 
+2) bağlantılı grupta / userbotjoinchannel Gönder
+3) Şimdi bağlantılı grupta komutlar gönderin
 """,
 f"""
 **Commands**
 
 **=>> Song Playing 🎧**
 
-- /play: Play the requestd song
-- /play [yt url] : Play the given yt url
-- /play [reply yo audio]: Play replied audio
-- /dplay: Play song via deezer
-- /splay: Play song via jio saavn
-- /ytplay: Directly play song via Youtube Music
+- /play: Müzüği başlatir
+- /play [yt url] : Belirlediginiz Yt url atarsanız calısır
+- /play [reply yo audio]: her hangi bi muzugi aratabilirsin
+- /dplay: Deezerden Müzik acabilirsiniz
+- /splay: sp Platformdan Müzüğinizi baslatir
+- /ytplay: Youtubeden Müzik çalar
 
 **=>> Playback ⏯**
 
-- /player: Open Settings menu of player
-- /skip: Skips the current track
-- /pause: Pause track
-- /resume: Resumes the paused track
-- /end: Stops media playback
-- /current: Shows the current Playing track
-- /playlist: Shows playlist
+- /player: Müzük Menüsü Açılır
+- /skip: Müzüği atlarsınız
+- /pause: Müzik durur
+- /resume: Müzik devam eder
+- /end: Durur medya lı müzik
+- /current: Geçerli çalma parçasını gösterir
+- /playlist: Çalma listesini gösterir
 
-*Player cmd and all other cmds except /play, /current  and /playlist  are only for admins of the group.
+*Player cmd ve /play, /current ve /playlist dışındaki diğer tüm cmd'ler yalnızca grubun yöneticileri içindir.
 """,
 
 f"""
 **=>> Channel Music Play 🛠**
 
-⚪️ For linked group admins only:
+✔ Sadece bağlı grup yöneticileri için:
 
-- /cplay [song name] - play song you requested
-- /cdplay [song name] - play song you requested via deezer
-- /csplay [song name] - play song you requested via jio saavn
-- /cplaylist - Show now playing list
-- /cccurrent - Show now playing
-- /cplayer - open music player settings panel
-- /cpause - pause song play
-- /cresume - resume song play
-- /cskip - play next song
-- /cend - stop music play
-- /userbotjoinchannel - invite assistant to your chat
+- /cplay [şarkı adı] - istediğiniz şarkıyı çalın
+- /cdplay [şarkı adı] - deezer aracılığıyla istediğiniz şarkıyı çalın
+- /csplay [şarkı adı] - jio saavn aracılığıyla istediğiniz şarkıyı çalın
+- /cplaylist-şimdi çalma listesini göster
+- /cccurrent-şimdi göster oynuyor
+- /cplayer-açık müzik çalar ayarları paneli
+- /cpause-şarkı çalmayı Duraklat
+- /cresume-şarkı çalmaya devam et
+- /cskıp-bir sonraki şarkıyı çal
+- /cend-müzik çalmayı Durdur
+- /userbotjoinchannel-asistanınızı sohbetinize davet edin
 
-channel is also can be used instead of c ( /cplay = /channelplay )
+kanal c yerine de kullanılabilir (/cplay = / channelplay )
 
-⚪️ If you donlt like to play in linked group:
+⚪️ Eğer böyle oynamaya donlt varsa bağlı grup içinde :
 
-1) Get your channel ID.
-2) Create a group with tittle: Channel Music: your_channel_id
-3) Add bot as Channel admin with full perms
-4) Add @{ASSISTANT_NAME} to the channel as an admin.
-5) Simply send commands in your group. (remember to use /ytplay instead /play)
+1) kanal kimliğinizi alın.
+2) tittle ile bir grup oluşturun: Kanal müzik: your_channel_id
+3) tam perma ile kanal yöneticisi olarak bot ekleyin
+4) kanala yönetici olarak @{ASSİSTANT_NAME} ekleyin.
+5) sadece grubunuza komutlar gönderin. (bunun yerine /ytplay /play kullanmayı unutmayın)
 """,
 
 f"""
-**=>> More tools 🧑‍🔧**
+**=>> Daha fazla araç 🧑🔧**
 
-- /musicplayer [on/off]: Enable/Disable Music player
-- /admincache: Updates admin info of your group. Try if bot isn't recognize admin
-- /userbotjoin: Invite @{ASSISTANT_NAME} Userbot to your chat
+- /musicplayer [on / off]: müzik çaları Etkinleştir / devre dışı bırak
+- /admincache: grubunuzun yönetici bilgilerini günceller. Bot yönetici tarafından tanınmıyorsa deneyin
+- /userbotjoin: @{ASSİSTANT_NAME} kullanıcısını sohbetinize davet edin
 """,
 f"""
-**=>> Song Download 🎸**
+**=>> Şarkı İndir 🎸**
 
-- /video [song mame]: Download video song from youtube
-- /song [song name]: Download audio song from youtube
-- /saavn [song name]: Download song from saavn
-- /deezer [song name]: Download song from deezer
+- /video [şarkı mame]: youtube'dan Video şarkı indir
+- /song [şarkı adı]: youtube'dan ses şarkısı indir
+- /saavn [şarkı adı]: saavn'dan şarkı indir
+- /deezer [şarkı adı]: deeze'den şarkı indir
 
-**=>> Search Tools 📄**
+**=>> Arama Araçları 📄**
 
-- /search [song name]: Search youtube for songs
-- /lyrics [song name]: Get song lyrics
+- /search [şarkı adı]: şarkılar için YouTube'da arama yapın
+- /lyrics sözleri [şarkı adı]: Şarkı Sözleri alın
 """,
 
 f"""
-**=>> Commands for Sudo Users ⚔️**
+**=>> Sudo kullanıcıları için komutlar:**
 
- - /userbotleaveall - remove assistant from all chats
- - /broadcast <reply to message> - globally brodcast replied message to all chats
- - /pmpermit [on/off] - enable/disable pmpermit message
-*Sudo Users can execute any command in any groups
+ - /userbotleaveall-Asistanı tüm sohbetlerden Kaldır
+ - /broadcast <Mesaja cevap ver> - global olarak brodcast tüm sohbetlere mesaj yanıtladı
+ - /pmpermit [açık/kapalı] - pmpermit mesajını Etkinleştir/devre dışı bırak
+*Sudo kullanıcıları herhangi bir gruptaki herhangi bir komutu çalıştırabilir
 
 """
       ]
