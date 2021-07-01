@@ -58,7 +58,7 @@ Get pyrogram (p)  `SESSION` from here:
 - `/userbotjoin ' - asistanınızı sohbetinize davet edin
 - `/userbotleave ' - Asistanı sohbetinizden kaldırın
 ### Krediler
-Bu bölümü düzenleme
+
 
 #### Özel Krediler
 - [BODRUMLU OWNER](http://github.com/bodrumlu48): Callsmusic Geliştirici
