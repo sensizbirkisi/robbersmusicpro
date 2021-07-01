@@ -30,7 +30,7 @@
 
 Get pyrogram (p)  `SESSION` from here:
 
-[![SESSION ALMAK ICIN TIKLA](https://t.me/StringSessionGenRobot)
+[SESSION ALMAK ICIN TIKLA](https://t.me/StringSessionGenRobot)
 
 
 ### Grup için komutlar :
@@ -61,7 +61,7 @@ Get pyrogram (p)  `SESSION` from here:
 
 
 #### Özel Krediler
-- [BODRUMLU OWNER](http://github.com/bodrumlu48): Callsmusic Geliştirici
+- [BODRUMLU OWNER](http://github.com/bodrumlu48): LoungeMusic Geliştirici
 
 
 #### DESTEK VERENLER
