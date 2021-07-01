@@ -1202,13 +1202,13 @@ async def lol_cb(b, cb):
     try:
         x,query,useer_id = typed_.split("|")      
     except:
-        await cb.message.edit("Song Not Found")
+        await cb.message.edit("Şarkı Bulunamadı")
         return
     useer_id = int(useer_id)
     if cb.from_user.id != useer_id:
-        await cb.answer("You ain't the person who requested to play the song!", show_alert=True)
+        await cb.answer("Şarkıyı çalmak isteyen kişi sen değilsin.!", show_alert=True)
         return
-    await cb.message.edit("Hang On... Player Starting")
+    await cb.message.edit("Müzik başladı..")
     x=int(x)
     try:
         useer_name = cb.message.reply_to_message.from_user.first_name
