@@ -513,7 +513,7 @@ async def play(_, message: Message):
         )
         return
     text_links=None
-    await lel.edit("🔎 <b>Finding</b>")
+    await lel.edit("🔎 <b>Hazırlanıyor..</b>")
     if message.reply_to_message:
         if message.reply_to_message.audio:
             pass
@@ -812,7 +812,7 @@ async def ytplay(_, message: Message):
             f"<i> {user.first_name} Userbot not in this chat, Ask admin to send /play command for first time or add {user.first_name} manually</i>"
         )
         return
-    await lel.edit("🔎 <b>Finding</b>")
+    await lel.edit("🔎 <b>Hazırlanıyor...</b>")
     user_id = message.from_user.id
     user_name = message.from_user.first_name
      
