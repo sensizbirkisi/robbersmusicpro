@@ -152,7 +152,7 @@ async def playlist(client, message):
         temp.append(t)
     now_playing = temp[0][0]
     by = temp[0][1].mention(style="md")
-    msg = "**Now Playing** in {}".format(message.chat.title)
+    msg = "**Müzik başlıyor** in {}".format(message.chat.title)
     msg += "\n- " + now_playing
     msg += "\n- Req by " + by
     temp.pop(0)
@@ -458,7 +458,7 @@ async def play(_, message: Message):
     global useer
     if message.chat.id in DISABLED_GROUPS:
         return    
-    lel = await message.reply("🔄 <b>Processing</b>")
+    lel = await message.reply("🔄 <b>Yükleniyor</b>")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
 
@@ -570,7 +570,7 @@ async def play(_, message: Message):
         )
     elif urls:
         query = toxt
-        await lel.edit("🎵 <b>Processing</b>")
+        await lel.edit("🎵 <b>Yükleniyor</b>")
         ydl_opts = {"format": "bestaudio/best"}
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
@@ -758,7 +758,7 @@ async def ytplay(_, message: Message):
     global que
     if message.chat.id in DISABLED_GROUPS:
         return
-    lel = await message.reply("🔄 <b>Processing</b>")
+    lel = await message.reply("🔄 <b>Yükleniyor</b>")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
 
@@ -790,10 +790,10 @@ async def ytplay(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "I joined this group for playing music in VC"
+                        message.chat.id, "VC'DE müzik çalmak için bu gruba katıldım"
                     )
                     await lel.edit(
-                        "<b>helper userbot joined your chat</b>",
+                        "<b>yardımcı userbot sohbetinize katıldı</b>",
                     )
 
                 except UserAlreadyParticipant:
@@ -801,8 +801,8 @@ async def ytplay(_, message: Message):
                 except Exception:
                     # print(e)
                     await lel.edit(
-                        f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add assistant to your Group and try again</b>",
+                        f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} userbot için yoğun talepler nedeniyle grubunuza katılamadı! Kullanıcının grupta yasaklanmadığından emin olun."
+                        "\n\nOr Asistanı grubunuza manuel olarak ekleyin ve tekrar deneyin</b>",
                     )
     try:
         await USER.get_chat(chid)
@@ -821,7 +821,7 @@ async def ytplay(_, message: Message):
     for i in message.command[1:]:
         query += " " + str(i)
     print(query)
-    await lel.edit("🎵 <b>Processing</b>")
+    await lel.edit("🎵 <b>Yükleniyor</b>")
     ydl_opts = {"format": "bestaudio/best"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -898,12 +898,12 @@ async def ytplay(_, message: Message):
         try:
            await callsmusic.set_stream(chat_id, file_path)
         except:
-            message.reply("Group Call is not connected or I can't join it")
+            message.reply("Grup çağrısı bağlı değil veya katılamam")
             return
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="▶️ <b>Playing</b> here the song requested by {} via Youtube Music 😎".format(
+            caption="▶️ <b>Playing</b> İşte youtube müzik aracılığıyla {} tarafından talep edilen şarkı 😎".format(
                 message.from_user.mention()
             ),
         )
@@ -915,13 +915,13 @@ async def deezer(client: Client, message_: Message):
     if message_.chat.id in DISABLED_GROUPS:
         return
     global que
-    lel = await message_.reply("🔄 <b>Processing</b>")
+    lel = await message_.reply("🔄 <b>Yükleniyor</b>")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "DaisyMusic"
+        user.first_name = "Loungemusic"
     usar = user
     wew = usar.id
     try:
@@ -932,14 +932,14 @@ async def deezer(client: Client, message_: Message):
             if administrator == message_.from_user.id:
                 if message_.chat.title.startswith("Channel Music: "):
                     await lel.edit(
-                        "<b>Remember to add helper to your channel</b>",
+                        "<b>Kanalınıza bir yardımcı eklemeyi unutmayın</b>",
                     )
                     pass
                 try:
                     invitelink = await client.export_chat_invite_link(chid)
                 except:
                     await lel.edit(
-                        "<b>Add me as admin of yor group first</b>",
+                        "<b>Önce beni  grubunun yöneticisi olarak Ekle</b>",
                     )
                     return
 
@@ -957,8 +957,8 @@ async def deezer(client: Client, message_: Message):
                 except Exception:
                     # print(e)
                     await lel.edit(
-                        f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add assistant to your Group and try again</b>",
+                        f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} userbot için yoğun talepler nedeniyle grubunuza katılamadı! Kullanıcının grupta yasaklanmadığından emin olun."
+                        "\n\nOr Asistanı grubunuza manuel olarak ekleyin ve tekrar deneyin</b>",
                     )
     try:
         await USER.get_chat(chid)
@@ -984,7 +984,7 @@ async def deezer(client: Client, message_: Message):
         url = songs.result[0].url
         artist = songs.result[0].artist
         duration = songs.result[0].duration
-        thumbnail = "https://telegra.ph/file/f6086f8909fbfeb0844f2.png"
+        thumbnail = "https://telegra.ph/file/03f1c9ec4513c3a52bc22.jpg"
 
     except:
         await res.edit("Found Literally Nothing, You Should Work On Your English!")
@@ -1004,7 +1004,7 @@ async def deezer(client: Client, message_: Message):
                 InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
             ],
             [InlineKeyboardButton(text="Listen On Deezer 🎬", url=f"{url}")],
-            [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+            [InlineKeyboardButton(text="❌ Kapat", callback_data="cls")],
         ]
     )
     file_path = await convert(wget.download(url))
@@ -1053,7 +1053,7 @@ async def jiosaavn(client: Client, message_: Message):
     global que
     if message_.chat.id in DISABLED_GROUPS:
         return    
-    lel = await message_.reply("🔄 <b>Processing</b>")
+    lel = await message_.reply("🔄 <b>Yükleniyor</b>")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     try:
@@ -1294,7 +1294,7 @@ async def lol_cb(b, cb):
         await b.send_photo(chat_id,
             photo="final.png",
             reply_markup=keyboard,
-            caption=f"▶️ <b>Playing</b> here the song requested by {r_by.mention} via Youtube Music 😎",
+            caption=f"▶️ <b>Playing</b> işte şarkı tarafından talep {r_by.mention} YouTube müzik aracılığıyla 😎",
         )
         
         os.remove("final.png")
