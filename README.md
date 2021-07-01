@@ -30,7 +30,7 @@
 
 Get pyrogram (p)  `SESSION` from here:
 
-[https://telegra.ph/file/03f1c9ec4513c3a52bc22.jpg![SESSION ALMAK ICIN TIKLA](https://t.me/StringSessionGenRobot)
+[![SESSION ALMAK ICIN TIKLA](https://t.me/StringSessionGenRobot)
 
 
 ### Grup için komutlar :
