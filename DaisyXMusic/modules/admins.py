@@ -86,7 +86,7 @@ async def stop(_, message: Message):
             pass
 
         await callsmusic.stop(chat_id)
-        await message.reply_text("❌ Stopped streaming!")
+        await message.reply_text("❌ Müzik durduruldu!")
 
 
 @Client.on_message(command("skip") & other_filters)
