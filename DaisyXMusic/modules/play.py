@@ -1084,7 +1084,7 @@ async def jiosaavn(client: Client, message_: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message_.chat.id, "I joined this group for playing music in VC"
+                        message_.chat.id, "VC'DE müzik çalmak için bu gruba katıldım"
                     )
                     await lel.edit(
                         "<b>helper userbot joined your chat</b>",
@@ -1095,8 +1095,8 @@ async def jiosaavn(client: Client, message_: Message):
                 except Exception:
                     # print(e)
                     await lel.edit(
-                        f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add @DaisyXmusic to your Group and try again</b>",
+                        f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} userbot için yoğun talepler nedeniyle grubunuza katılamadı! Kullanıcının grupta yasaklanmadığından emin olun."
+                        "\n\nOr @Loungemusicasistan'i grubunuza manuel olarak ekleyin ve tekrar deneyin</b>",
                     )
     try:
         await USER.get_chat(chid)
@@ -1250,9 +1250,9 @@ async def lol_cb(b, cb):
             ],
             [
                 InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                InlineKeyboardButton(text="İndir 📥", url=f"{dlurl}"),
             ],
-            [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+            [InlineKeyboardButton(text="❌ Kapat", callback_data="cls")],
         ]
     )
     requested_by = useer_name
