@@ -862,9 +862,9 @@ async def ytplay(_, message: Message):
             ],
             [
                 InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                InlineKeyboardButton(text="İndir 📥", url=f"{dlurl}"),
             ],
-            [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+            [InlineKeyboardButton(text="❌ Kapat", callback_data="cls")],
         ]
     )
     requested_by = message.from_user.first_name
