@@ -186,7 +186,7 @@ def updated_stats(chat, queue, vol=100):
 
 
 def r_ply(type_):
-    if type_ == "play":
+    if type_ == "oynat":
         pass
     else:
         pass
