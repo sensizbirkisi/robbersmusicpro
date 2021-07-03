@@ -50,9 +50,9 @@ f"""
 
 **=>> Song Playing 🎧**
 
-- /play: Müzüği başlatir
-- /play [yt url] : Belirlediginiz Yt url atarsanız calısır
-- /play [reply yo audio]: her hangi bi muzugi aratabilirsin
+- /oynat: Müzüği başlatir
+- /oynat: [yt url] : Belirlediginiz Yt url atarsanız calısır
+- /oynat: [reply yo audio]: her hangi bi muzugi aratabilirsin
 - /dplay: Deezerden Müzik acabilirsiniz
 - /splay: sp Platformdan Müzüğinizi baslatir
 - /ytplay: Youtubeden Müzik çalar
