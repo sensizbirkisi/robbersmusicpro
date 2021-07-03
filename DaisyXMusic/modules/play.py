@@ -343,10 +343,10 @@ async def m_cb(b, cb):
             callsmusic.pause(chet_id)
             await cb.answer("Müzik Duraklatıldı!")
             await cb.message.edit(
-                updated_stats(m_chat, qeue), reply_markup=r_ply("play")
+                updated_stats(m_chat, qeue), reply_markup=r_ply("oynat")
             )
 
-    elif type_ == "play":
+    elif type_ == "oynat":
         if (chet_id not in callsmusic.active_chats) or (
             callsmusic.active_chats[chet_id] == "playing"
         ):
