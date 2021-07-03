@@ -235,7 +235,7 @@ async def settings(client, message):
         if playing:
             await message.reply(stats, reply_markup=r_ply("pause")) 
         else:
-            await message.reply(stats, reply_markup=r_ply("play"))
+            await message.reply(stats, reply_markup=r_ply("oynat"))
     else:
         await message.reply("No VC instances running in this chat")
 
@@ -316,7 +316,7 @@ async def p_cb(b, cb):
 
 
 @Client.on_callback_query(
-    filters.regex(pattern=r"^(play|pause|skip|leave|puse|resume|menu|cls)$")
+    filters.regex(pattern=r"^(oynat|pause|skip|leave|puse|resume|menu|cls)$")
 )
 @cb_admin_check
 async def m_cb(b, cb):
