@@ -1,7 +1,7 @@
 {
   "name": "LoungeMusic",
   "logo": "https://telegra.ph/file/03f1c9ec4513c3a52bc22.jpg",
-  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
+  "description": "Bu bot Gruplanizda Rahatlikla Muzik dinlemeniz icin yapildi Sahibi Bodrumlu.",
   "keywords": ["music", "voicechat", "telegram"],
   "repository": "https://github.com/bodrumlu48/LoungeMusic",
   "stack": "heroku-20",
