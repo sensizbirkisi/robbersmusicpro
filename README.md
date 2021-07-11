@@ -36,8 +36,8 @@ Get pyrogram (p)  `SESSION` from here:
 ### Grup için komutlar :
 #### Gruptaki herkes için
 
-- '/play < şarkı adı> ' - istediğiniz şarkıyı çalın
-- `/play <sese cevap ver> ' - yanıtlanan dosyayı oynat
+- '/oynat < şarkı adı> ' - istediğiniz şarkıyı çalın
+- `/oynat <sese cevap ver> ' - yanıtlanan dosyayı oynat
 - '/dplay < şarkı adı> ' - deezer üzerinden istediğiniz şarkıyı çalın
 - '/splay <şarkı adı> ' - jio saavn aracılığıyla istediğiniz şarkıyı çalın
 - '/ytplay < şarkı adı>': doğrudan YouTube müzik üzerinden şarkı çalmak
